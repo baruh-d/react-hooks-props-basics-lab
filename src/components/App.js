@@ -9,10 +9,10 @@ console.log(user);
 
 function App() {
   return (
-    <div>
+    <div id="portfolio">
       <NavBar />
-      <Home />
-      <About />
+      <Home name = {user.name} city ={user.city} color={user.color}/>
+      <About bio = {user.bio} link = {user.links}/>
     </div>
   );
 }
